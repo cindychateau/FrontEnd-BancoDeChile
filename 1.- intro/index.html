@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Documento de HTML5 -->
+<html lang="es"> <!-- Comienza doc de HTML con idioma es -->
+<head>
+    <meta charset="UTF-8"> <!-- Tipo de Codificado para los caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Introducción a HTML</title>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+
+    <p>
+        Este es un párrafo ordinario
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere enim, odit eaque placeat expedita dolorem, voluptatem nostrum, eos ab illo at id quis nesciunt maxime alias? Eius, ut delectus.
+    </p>
+
+    <a href="http://google.com" target="_blank">Este es un enlace</a>
+
+    <p>
+        Etiqueta <strong>strong o negrita</strong> y etiqueta <em>enfasis o italica</em>
+    </p>
+
+    <h2>Lista desordenada</h2>
+    <ul>
+        <li>Escuchar Música</li>
+        <li>Leer</li>
+        <li>Senderismo</li>
+        <li>Comer</li>
+        <li>Ver anime</li>
+        <li>Jugar videojuegos</li>
+    </ul>
+
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Entrar diario al Calendario</li>
+        <li>Estar puntuales en la sala de zoom</li>
+        <li>Poner atención en la nueva lección</li>
+        <li>Hacer mis tareas core</li>
+        <li>Hacer las prácticas y opcionales</li>
+    </ol>
+
+    <h2>Tabla</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Columna 1.1</td>
+                <td>Columna 1.2</td>
+                <td>Columna 1.3</td>
+            </tr>
+            <tr>
+               <td>Columna 2.1</td> 
+               <td>Columna 2.2</td>
+               <td>Columna 2.3</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="images/gatito.jpg" alt="Gatito" />
+    <div></div>
+    <h2>Formulario</h2>
+    <form action="/contacto" method="post">
+        <div>
+            <label>Nombre: </label>
+            <input type="text" name="nombre" />
+        </div>
+        <div>
+            <input type="number" name="numero" />
+            <input type="password" name="contra" />
+            <input type="date" name="fecha" />
+            <input type="email" name="correo" placeholder="Correo Electrónico" />
+        </div>
+        <div>
+            <input type="radio" name="estado_civil" value="casado" id="id_casado" />
+            <label for="id_casado">Casado</label> <br>
+            <input type="radio" name="estado_civil" value="soltero" id="id_soltero" />
+            <label for="id_soltero">Soltero</label>
+        </div>
+        <div>
+            <input type="checkbox" name="terminos_condiciones" id="id_terminos" />
+            <label for="id_terminos">Aceptar términos y condiciones</label>
+        </div>
+        <div>
+            <textarea cols="30" rows="50"></textarea>
+        </div>
+        <div>
+            <label>Comida preferida</label>
+            <select>
+                <option>Pizza</option>
+                <option>Sushi</option>
+                <option>Tacos</option>
+                <option>Hamburguesa</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Enviar Info" />
+        </div>
+    </form>
+</body>
+</html>
