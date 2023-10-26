@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> <!-- Tipo de Codificado para los caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Introducción a HTML</title>
+    <link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
     <h1>Título 1</h1>
@@ -13,18 +14,31 @@
     <h5>Título 5</h5>
     <h6>Título 6</h6>
 
-    <p>
+    <p id="green" class="red under" >
         Este es un párrafo ordinario
     </p>
-    <p>
+    <p id="parrafo_especial" >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere enim, odit eaque placeat expedita dolorem, voluptatem nostrum, eos ab illo at id quis nesciunt maxime alias? Eius, ut delectus.
     </p>
 
-    <a href="http://google.com" target="_blank">Este es un enlace</a>
+    <a class="red" href="http://google.com" target="_blank">Este es un enlace</a>
 
     <p>
         Etiqueta <strong>strong o negrita</strong> y etiqueta <em>enfasis o italica</em>
     </p>
+    <strong>Otro strong</strong>
+
+    <div class="container">
+        <p>Este es un párrafo hijo</p>
+        <a href="#">Este es un enlace hijo</a>
+        <div>
+            <p>Este es un párrafo nieto</p>
+        </div>
+        <p>
+            Otro párrafo
+        </p>
+    </div>
+
 
     <h2>Lista desordenada</h2>
     <ul>

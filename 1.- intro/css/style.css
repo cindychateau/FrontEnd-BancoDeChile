@@ -1,0 +1,78 @@
+/* CSS - Cascade Style Sheets */
+/*
+SELECTORES BÁSICOS:
+etiqueta {
+    propiedad: valor;
+}
+
+.clase {
+    propiedad: valor;
+}   
+
+#id {
+    propiedad: valor;
+}
+
+*/
+
+h2 {
+    color: blue;
+    font-size: 40px;
+}
+
+.red {
+    color: red;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+#parrafo_especial {
+    border: 2px solid purple;
+    border-radius: 20px;
+}
+/*Jerarquía: ID, CLASES, ETIQUETA*/
+#green { /* ID tiene prioridad */
+    color: green;
+}
+
+p strong { /*Etiqueta strong que está dentro de párrafo*/
+    text-transform: uppercase;
+}
+
+/*
+.red strong
+#parrafo_especial em
+.under .abc
+*/
+
+.container > p { /*Descendiente directo*/
+    border: 1px dashed red;
+    border-radius: 10px;
+}
+
+.container > div > p {
+    color: gray;
+}
+
+a.red { /*Aquel elemento que es a y que tiene clase red*/
+    text-decoration: line-through;
+}
+/*
+h2.under
+.red.under
+p.abc
+*/
+
+input[type="text"] {
+    width: 350px;
+}
+
+input[type="number"] {
+    height: 100px;
+}
+
+input, textarea {
+    border: 3px solid magenta;
+}
