@@ -14,6 +14,12 @@ etiqueta {
 }
 
 */
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 h2 {
     color: blue;
@@ -133,4 +139,38 @@ h3.prueba_color {
     /*margin: 0 auto; /*centra horizontalmente*/
 }
 
+#box_model:hover {
+    background-color: blue;
+}
 
+
+.inline {
+    /*Me despliega en una sola línea PERO no puedo dar tamaños*/
+    display: inline;
+}
+
+.block {
+    /*Me despliega mi elemento como bloque, no puede haber nada en esa misma línea PERO si me deja tener un tamaño */
+    display: block;
+}
+
+.inline-block {
+    /*Me permite colocar los elementos en una sola línea y darles un tamaño en específico*/
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+#div1 {
+    height: 150px;
+}
+
+#div2 {
+    height: 300px;
+}
+
+#div3 {
+    height: 500px;
+}
