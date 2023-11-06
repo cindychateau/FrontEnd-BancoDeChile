@@ -30,4 +30,49 @@ var pokémon = [
     { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
 ];
 
+// console.log(pokemon[0]["name"]); //pokemon[0].name
 
+/* PRINT all the NAMES of the pokemons that have ID greater than 99
+    Imprimir todos los NOMBRES de pokemones con ID mayor a 99
+*/
+for (let i=0; i<pokémon.length; i++){
+    if(pokémon[i].id > 99){
+        console.log(pokémon[i].name);
+    }
+}
+
+/* PRINT the pokémon objects whose id is evenly divisible by 3
+    Imprimir el OBJETO en el cual el id es divisible entre 3
+*/
+for (let i=0; i<pokémon.length; i++){
+    if(pokémon[i].id % 3 === 0){
+        console.log(pokémon[i]);
+    }
+}
+
+/* PRINT the pokémon objects that have more than one type
+    Imprimir el OBJETO con más de un tipo
+*/
+for (let i=0; i<pokémon.length; i++){
+    if(pokémon[i].types.length > 1){
+        console.log(pokémon[i]);
+    }
+}
+
+/* PRINT the names of the pokémon whose only type is "poison"
+    Imprimir NOMBRE de pokemon que SOLO TIENE tipo "poison"
+*/
+// for(let i=0; i< pokémon.length; i++) {
+//     if(pokémon[i].types.includes("poison") && pokémon[i].types.includes("grass")) {
+//         console.log(pokémon[i]);
+//     }
+// }
+
+for(let i=0; i < pokémon.length; i++){
+    if(pokémon[i].types == "poison"){
+        console.log(pokémon[i]);
+    }
+}
+
+// if(1 == "1") -> true Compara valores
+// if(1 === "1") ->false Compara valores y tipo de dato
