@@ -99,7 +99,7 @@ i = 3
 ---
 i = 4
  */
-for(var i=0; i < 4; i++){ // (inicializar; condicional; paso)
+for(let i=0; i < 4; i++){ // (inicializar; condicional; paso)
     console.log("¡Hola!");
     console.log("¿Cómo estás?");
 }
@@ -167,3 +167,97 @@ if(variable1 == variable2) {
 if(variable1 === variable2) {
     console.log("Son iguales y con el mismo tipo");
 }
+
+/* ARRAY/ARREGLO/LISTA */
+var hobbies = [ "Leer",
+                "Correr",
+                "Bailar",
+                "Cantar",
+                "Tocar la guitarra",
+                "Jugar videojuegos"
+            ];
+console.log(hobbies[0]);
+
+hobbies[1] = "Trotar";
+console.log(hobbies);
+
+console.log(hobbies.length);
+
+//A través de un bucle recorremos el arreglo
+for(let z=0; z < hobbies.length; z++) {
+    console.log(hobbies[z]);
+}
+
+var combinado = [
+    1.11,
+    "Texto de arreglo",
+    true,
+    30,
+    ["esta", "es", "otra", "lista"]
+]
+
+for(let i=0; i < combinado.length; i++) {
+    console.log(`Posición: ${i} de mi arreglo es: ${combinado[i]}`);
+}
+
+combinado.push("nuevo elemento"); //Agrega nuevo elemento a la lista
+console.log(combinado);
+
+combinado.pop(); //Elimina el último elemento de nuestra lista
+combinado.pop();
+console.log("-----");
+console.log(combinado);
+
+const nombres = ["Juana", "Elena", "Paco", "Pedro"];
+nombres.pop();
+console.log(nombres);
+nombres[1] = "Rosa";
+console.log(nombres);
+
+const no_modificable = "ABC";
+// no_modificable = "BCD";
+// nombres = ["A", "B", "C"];
+
+combinado = [];
+
+var matriz = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10]
+]
+
+matriz[0].push(6);
+console.log(matriz);
+
+/* OBJETOS */
+var estudiante = {
+    "id": 12345,
+    "nombre": "Elena",
+    "apellido": "De Troya",
+    "edad": 25,
+    "hobbies": ["Leer", "Bailar", "Ver series"],
+    "direcciones": [
+        {
+            "calle": "Av. Sol",
+            "num": 123,
+            "ciudad": "Monterrey",
+            "pais": "México"
+        },
+        {
+            "calle": "Primera Avenida",
+            "num": 345,
+            "ciudad": "Guadalajara",
+            "pais": "México"
+        }
+    ]
+};
+
+console.log(estudiante["nombre"]);
+console.log(estudiante.apellido);
+estudiante.apellido = "De Arco";
+console.log(estudiante);
+
+estudiante["curso"] = "Front-End"; //Agregamos propiedad/key
+console.log(estudiante);
+
+delete estudiante.direcciones; //Eliminar propiedad/key
+console.log(estudiante);
