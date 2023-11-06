@@ -1,10 +1,10 @@
-var monster = {
+var monster = { //Objeto
     id: 1,
     name: "Bulbasaur",
     types: ["poison", "grass"]
 }
 
-var pokémon = [
+var pokémon = [ //Arreglo
     { "id": 1,   "name": "Bulbasaur",  "types": ["poison", "grass"] },
     { "id": 5,   "name": "Charmeleon", "types": ["fire"] },
     { "id": 9,   "name": "Blastoise",  "types": ["water"] },
