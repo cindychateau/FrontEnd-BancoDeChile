@@ -13,12 +13,12 @@
     <!-- navbar -->
     <div class="nav">
         <div class="flex-container">
-            <h1 class="nav-title">Profile</h1>
+            <h1 class="nav-title" onclick="aumentar_clicks()">Profile</h1>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-                <li><button class="btn">Sign Out</button></li>
+                <li><a href="#" onclick="cambiar_texto(this)" >Home</a></li>
+                <li><a href="#" class="active" onclick="cambiar_texto(this)">My Profile</a></li>
+                <li><a href="#" onclick="cambiar_texto(this)">Find Connections</a></li>
+                <li><button class="btn" onclick="alerta()">Sign Out</button></li>
             </ul>
         </div>
     </div>
@@ -32,7 +32,7 @@
             <!-- user info card -->
             <div class="card user-card">
                 <div class="card-header">
-                    <img src="images/jane-m.jpg" alt="jane" class="avatar-m">
+                    <img onmouseover="cambia_imagen(this)" onmouseout="regresa_imagen(this)" src="images/jane-m.jpg" alt="jane" class="avatar-m">
                 </div>
                 <div class="card-body">
                     <h1>Jane Doe</h1>
@@ -46,7 +46,7 @@
             <!-- user education card -->
             <div class="card">
                 <div class="card-header">
-                    <h3>Education</h3>
+                    <h3 onclick="cambio_education(this)">Education</h3>
                 </div>
                 <div class="card-body">
                     <h2>Coding Dojo - Full Stack Bootcamp</h2>
@@ -74,7 +74,7 @@
                         </span>
                         <span>
                             <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/close-circle.png" alt="close" class="icon" ondblclick="eliminar(this)">
                         </span>
                     </li>
                     <li class="card-list-item">
@@ -84,7 +84,7 @@
                         </span>
                         <span>
                             <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/close-circle.png" alt="close" class="icon" ondblclick="eliminar(this)">
                         </span>
                     </li>
                 </ul>
@@ -121,5 +121,6 @@
 
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
