@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    border: 2px solid black;
+    width: 450px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center; /*vertical*/
+    justify-content: space-between; /*horizontal*/
+}
+
+button {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 0px black;
+}
