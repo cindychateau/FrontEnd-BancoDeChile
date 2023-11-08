@@ -35,3 +35,43 @@ function aumentar_clicks() {
 
     alert("Haz hecho click "+clicks_profile);
 }
+
+function editar_perfil() {
+    //document.getElementById("nombre");
+    var elemento_nombre = document.querySelector("#nombre"); //elemento_nombre = <h1 id="nombre">Jane Doe</h1>
+
+    //Obtener el elemento
+    var input = document.getElementById("input_nombre"); //document.querySelector("#input_nombre")
+    var valor_de_input = input.value;
+    if(valor_de_input == "") {
+        elemento_nombre.innerText = "Elena de Troya";
+    } else {
+        elemento_nombre.innerText = valor_de_input;
+        //input.remove();
+    }
+
+    document.querySelector(".locacion").innerHTML = '<img src="icons/map-marker.png" alt="pin" class="icon-s"> Troya';   
+
+    //Query selector SOLO funciona con 1 elemento.
+    var elemento_p = document.querySelector(".card-body p"); // elemento_p = <p>Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
+    elemento_p.innerHTML = "Desarrolladora, Ingeniera <br> Reina emperatriz de Troya";
+
+    elemento_nombre.style.color = "white";
+    //background-color -> backgroundColor
+    //margin-left -> marginLeft
+    elemento_nombre.style.backgroundColor = "blue";
+    //text-shadow -> textShadow
+    elemento_nombre.style.textShadow = "2px 2px 2px black";
+
+    //classList -> arreglo
+    //Pregunto si existe la clase en el elemento
+    if(elemento_p.classList.contains("parrafo_darkmode")) {
+        //Quitamos la clase
+        elemento_p.classList.remove("parrafo_darkmode")
+    } else {
+        //Agregamos clase
+        elemento_p.classList.add("parrafo_darkmode");
+    }
+
+    
+}

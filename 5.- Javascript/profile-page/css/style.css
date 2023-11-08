@@ -182,3 +182,9 @@ a {
     border-radius: 12px;
     margin-right: 10px;
 }
+
+.parrafo_darkmode {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
