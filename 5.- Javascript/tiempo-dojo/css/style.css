@@ -8,6 +8,7 @@
 header {
     background-color: #9FC5F8;
     padding: 20px 0;
+    /*width: 100%*/
     /*height: 70px*/
 }
 /*Medidas Estándar: 1280MD 1920HD*/
@@ -56,4 +57,58 @@ nav a {
     padding: 20px 0;
     border-bottom: 2px solid black;
     border-radius: 5px;
+}
+
+.semana {
+    width: 1000px;
+    margin:0 auto;
+    display: flex;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+.dia {
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 100px; temporal */
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 15px 0;
+}
+
+.dia img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.temperaturas {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.max {
+    color: red;
+}
+
+.min {
+    color: blue;
+}
+
+footer {
+    position: fixed; /*Fijaba el elemento en un espacio ignorando el scroll*/
+    bottom: 0;
+    width: 100%;
+}
+
+.cookie {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: lightgray;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
