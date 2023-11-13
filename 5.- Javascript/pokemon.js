@@ -32,6 +32,14 @@ var pokémon = [ //Arreglo
 
 // console.log(pokemon[0]["name"]); //pokemon[0].name
 
+//Lista de OBJ pokemon que comiencen con la letra B
+var pokemonLetraB = pokémon.filter(poke => poke.name.startsWith("B"));
+console.log(pokemonLetraB);
+
+//Lista de SOLO nombres de pokemones
+var soloNombres = pokémon.map(poke => poke.name);
+console.log(soloNombres);
+
 /* PRINT all the NAMES of the pokemons that have ID greater than 99
     Imprimir todos los NOMBRES de pokemones con ID mayor a 99
 */
@@ -76,3 +84,17 @@ for(let i=0; i < pokémon.length; i++){
 
 // if(1 == "1") -> true Compara valores
 // if(1 === "1") ->false Compara valores y tipo de dato
+
+
+/* PRINT all the NAMES of the pokemons that have ID greater than 99
+    Lista todos los NOMBRES de pokemones con ID mayor a 99
+*/
+/* PRINT the pokémon objects whose id is evenly divisible by 3
+    Lista los OBJETOS en el cual el id es divisible entre 3
+*/
+/* PRINT the pokémon objects that have more than one type
+    Lista los OBJETOS con más de un tipo
+*/
+/* PRINT the names of the pokémon whose only type is "poison"
+    Lista los NOMBRES de pokemon que SOLO TIENE tipo "poison"
+*/
