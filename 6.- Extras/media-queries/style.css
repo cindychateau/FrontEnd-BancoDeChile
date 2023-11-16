@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    background-color: darkmagenta;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 50px;
+}
+
+/*
+WIDTHS
+320px: Teléfonos muy pequeños
+480px: La mayor parte de teléfonos/dispositivos móviles
+768px: La mayor parte de tablets
+992px: Desktops pequeños
+1200px: Desktops más grandes
+1920px: HD
+*/
+@media screen and (max-width: 992px) { /*menos 992px*/
+    .column {
+        flex: 50%;
+        background-color:violet;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) { /*menos 767px*/
+    .column {
+        flex: 100%;
+        background-color: lightcoral;
+    }
+
+    h2 {
+        font-size: 100px;
+    }
+}
+
+.red {
+    background-color: red;
+}
