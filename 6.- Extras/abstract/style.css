@@ -125,3 +125,39 @@ main {
     margin-bottom: 20px;
     line-height: 40px;
 }
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 50px 70px;
+}
+
+section {
+    flex: 1;
+}
+
+.copyright {
+    flex: 1;
+}
+
+section h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: none;
+}
+
+section ul a {
+    color: white;
+    text-decoration: none;
+}
+
+section ul a:hover {
+    text-decoration: underline;
+}
+
+.copyright p {
+    margin-top: 100px;
+}
