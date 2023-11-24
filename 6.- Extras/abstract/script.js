@@ -1,3 +1,12 @@
+
+var typed = new Typed('#titulo', {
+    strings: ['How can we help?', 'Im here to help you', 'Te ayudamos'],
+    typeSpeed: 50,
+});
+
+AOS.init();
+
+
 function mostrarModal() {
     //Seleccionamos input
     let input = document.querySelector('input');
